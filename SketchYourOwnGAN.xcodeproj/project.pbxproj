@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003946E627C6BF7F000C8FFD /* GAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003946E527C6BF7F000C8FFD /* GAN.swift */; };
 		00A34A1E274426B000D8DBE3 /* SketchYourOwnGANApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */; };
 		00A34A20274426B000D8DBE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A34A1F274426B000D8DBE3 /* ContentView.swift */; };
 		00A34A22274426B400D8DBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A34A21274426B400D8DBE3 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003946E527C6BF7F000C8FFD /* GAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAN.swift; sourceTree = "<group>"; };
 		00A34A1A274426B000D8DBE3 /* SketchYourOwnGAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchYourOwnGAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchYourOwnGANApp.swift; sourceTree = "<group>"; };
 		00A34A1F274426B000D8DBE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		00A34A1C274426B000D8DBE3 /* SketchYourOwnGAN */ = {
 			isa = PBXGroup;
 			children = (
+				003946E527C6BF7F000C8FFD /* GAN.swift */,
 				00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */,
 				00A34A1F274426B000D8DBE3 /* ContentView.swift */,
 				00A34A21274426B400D8DBE3 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003946E627C6BF7F000C8FFD /* GAN.swift in Sources */,
 				00A34A20274426B000D8DBE3 /* ContentView.swift in Sources */,
 				00A34A1E274426B000D8DBE3 /* SketchYourOwnGANApp.swift in Sources */,
 			);

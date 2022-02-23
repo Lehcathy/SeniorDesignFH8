@@ -7,7 +7,7 @@
 
 import SwiftUI
 import PencilKit
-
+import Vision
 struct ContentView: View {
     @State var sketching = true
     @State var canvas = PKCanvasView()
@@ -41,7 +41,6 @@ struct ContentView: View {
                     Spacer()
                 }
                 Spacer()
-            
             }
         } else {
             VStack {
@@ -53,16 +52,13 @@ struct ContentView: View {
                     Button("Run GAN", action:{ RunGan()}).buttonStyle(.bordered).background().colorMultiply(.blue).foregroundColor(.black)
                     Button("Back to Sketch", action:{ sketching = true}).buttonStyle(.bordered).background().colorMultiply(.blue).foregroundColor(.black)
                 }
-                
                 Spacer()
             }
         }
     }
 }
 
-func RunGan() {
-    print("running GAN")
-}
+
 
 struct DrawingView: UIViewRepresentable {
     @Binding var canvas: PKCanvasView
