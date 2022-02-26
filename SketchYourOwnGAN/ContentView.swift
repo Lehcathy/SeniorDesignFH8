@@ -12,6 +12,9 @@ struct ContentView: View {
     @State var sketching = true
     @State var canvas = PKCanvasView()
     @State var erasing = false
+    @State var gan = GAN()
+    @State var sketch = UIImage()
+    @State var outputImage = UIImage()
     var body: some View {
         if sketching {
             VStack{
@@ -25,7 +28,11 @@ struct ContentView: View {
                         Image(systemName: "square.and.arrow.down.fill").font(.title)
                     })
                     Spacer()
-                    Button("To GAN", action: {sketching=false}).buttonStyle(.bordered).background().colorMultiply(.blue).foregroundColor(.black)
+                    Button("To GAN", action: {
+                        sketching=false
+                        sketch = canvas.drawing.image(from: canvas.drawing.bounds, scale: 1)
+                        print("image created")
+                    }).buttonStyle(.bordered).background().colorMultiply(.blue).foregroundColor(.black)
                     Spacer()
                     Button(action: {
                         erasing = false
@@ -44,12 +51,17 @@ struct ContentView: View {
             }
         } else {
             VStack {
+                SwiftUI.Image(uiImage: outputImage)
                 Image("image1").resizable().aspectRatio(contentMode: .fit)
                 Image("image2").resizable().aspectRatio(contentMode: .fit)
                 Image("image3").resizable().aspectRatio(contentMode: .fit)
                 Image("image4").resizable().aspectRatio(contentMode: .fit)
                 HStack {
-                    Button("Run GAN", action:{ RunGan()}).buttonStyle(.bordered).background().colorMultiply(.blue).foregroundColor(.black)
+                    Button("Run GAN", action:{
+                        let ciimage = CIImage(image: sketch)
+                        gan.RunGan(sketch: ciimage!)
+                        outputImage = sketch//gan.outputImage!
+                    }).buttonStyle(.bordered).background().colorMultiply(.blue).foregroundColor(.black)
                     Button("Back to Sketch", action:{ sketching = true}).buttonStyle(.bordered).background().colorMultiply(.blue).foregroundColor(.black)
                 }
                 Spacer()
