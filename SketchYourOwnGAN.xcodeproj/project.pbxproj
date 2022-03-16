@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		003946E627C6BF7F000C8FFD /* GAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003946E527C6BF7F000C8FFD /* GAN.swift */; };
-		003946E827C9A009000C8FFD /* ugatit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 003946E727C9A008000C8FFD /* ugatit.mlmodel */; };
+		003946EC27E17F8A000C8FFD /* ugatit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 003946EB27E17F8A000C8FFD /* ugatit.mlmodel */; };
+		003946EE27E17F8D000C8FFD /* warpgan.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 003946ED27E17F8D000C8FFD /* warpgan.mlmodel */; };
 		00A34A1E274426B000D8DBE3 /* SketchYourOwnGANApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */; };
 		00A34A20274426B000D8DBE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A34A1F274426B000D8DBE3 /* ContentView.swift */; };
 		00A34A22274426B400D8DBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A34A21274426B400D8DBE3 /* Assets.xcassets */; };
@@ -17,7 +18,8 @@
 
 /* Begin PBXFileReference section */
 		003946E527C6BF7F000C8FFD /* GAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAN.swift; sourceTree = "<group>"; };
-		003946E727C9A008000C8FFD /* ugatit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ugatit.mlmodel; path = ../../../../Desktop/ugatit.mlmodel; sourceTree = "<group>"; };
+		003946EB27E17F8A000C8FFD /* ugatit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ugatit.mlmodel; sourceTree = "<group>"; };
+		003946ED27E17F8D000C8FFD /* warpgan.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = warpgan.mlmodel; sourceTree = "<group>"; };
 		00A34A1A274426B000D8DBE3 /* SketchYourOwnGAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchYourOwnGAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchYourOwnGANApp.swift; sourceTree = "<group>"; };
 		00A34A1F274426B000D8DBE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,7 +57,8 @@
 		00A34A1C274426B000D8DBE3 /* SketchYourOwnGAN */ = {
 			isa = PBXGroup;
 			children = (
-				003946E727C9A008000C8FFD /* ugatit.mlmodel */,
+				003946EB27E17F8A000C8FFD /* ugatit.mlmodel */,
+				003946ED27E17F8D000C8FFD /* warpgan.mlmodel */,
 				003946E527C6BF7F000C8FFD /* GAN.swift */,
 				00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */,
 				00A34A1F274426B000D8DBE3 /* ContentView.swift */,
@@ -143,9 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003946E827C9A009000C8FFD /* ugatit.mlmodel in Sources */,
+				003946EC27E17F8A000C8FFD /* ugatit.mlmodel in Sources */,
 				003946E627C6BF7F000C8FFD /* GAN.swift in Sources */,
 				00A34A20274426B000D8DBE3 /* ContentView.swift in Sources */,
+				003946EE27E17F8D000C8FFD /* warpgan.mlmodel in Sources */,
 				00A34A1E274426B000D8DBE3 /* SketchYourOwnGANApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

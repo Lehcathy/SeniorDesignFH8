@@ -15,6 +15,7 @@ struct ContentView: View {
     @State var gan = GAN()
     @State var sketch = UIImage()
     @State var outputImage = UIImage()
+    let context = CIContext()
     var body: some View {
         if sketching {
             VStack{
@@ -51,16 +52,15 @@ struct ContentView: View {
             }
         } else {
             VStack {
-                SwiftUI.Image(uiImage: outputImage)
-                Image("image1").resizable().aspectRatio(contentMode: .fit)
-                Image("image2").resizable().aspectRatio(contentMode: .fit)
-                Image("image3").resizable().aspectRatio(contentMode: .fit)
-                Image("image4").resizable().aspectRatio(contentMode: .fit)
+                Image(uiImage:outputImage).resizable().aspectRatio(contentMode: .fit)
+                Image("Gracie").resizable().aspectRatio(contentMode: .fit)
                 HStack {
                     Button("Run GAN", action:{
-                        let ciimage = CIImage(image: sketch)
-                        gan.RunGan(sketch: ciimage!)
-                        outputImage = sketch//gan.outputImage!
+                        let sketch2 = UIImage(imageLiteralResourceName: "Gracie")
+                        let ciimage = CIImage(cgImage: sketch2.cgImage!)
+                        gan.RunGan(sketch: ciimage)
+                        outputImage =  gan.outputImage!
+                        print("gan successfully run")
                     }).buttonStyle(.bordered).background().colorMultiply(.blue).foregroundColor(.black)
                     Button("Back to Sketch", action:{ sketching = true}).buttonStyle(.bordered).background().colorMultiply(.blue).foregroundColor(.black)
                 }
