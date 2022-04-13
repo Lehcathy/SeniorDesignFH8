@@ -53,11 +53,10 @@ struct ContentView: View {
         } else {
             VStack {
                 Image(uiImage:outputImage).resizable().aspectRatio(contentMode: .fit)
-                Image("Gracie").resizable().aspectRatio(contentMode: .fit)
+                Image("suki").resizable().aspectRatio(contentMode: .fit)
                 HStack {
                     Button("Run GAN", action:{
-                        let sketch2 = UIImage(imageLiteralResourceName: "Gracie")
-                        let ciimage = CIImage(cgImage: sketch2.cgImage!)
+                        let ciimage = CIImage(cgImage: sketch.cgImage!)
                         gan.RunGan(sketch: ciimage)
                         outputImage =  gan.outputImage!
                         print("gan successfully run")
