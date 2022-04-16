@@ -7,35 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001C55B828089BC600A71566 /* CoreML+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55A728089BC500A71566 /* CoreML+Combine.swift */; };
+		001C55B928089BC600A71566 /* CGImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55B428089BC600A71566 /* CGImage+CVPixelBuffer.swift */; };
+		001C55BA28089BC600A71566 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55AC28089BC600A71566 /* Math.swift */; };
+		001C55BB28089BC600A71566 /* Predictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55B628089BC600A71566 /* Predictions.swift */; };
+		001C55BC28089BC600A71566 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55B328089BC600A71566 /* Array+Extensions.swift */; };
+		001C55BD28089BC600A71566 /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55A928089BC600A71566 /* NonMaxSuppression.swift */; };
+		001C55BE28089BC600A71566 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55AA28089BC600A71566 /* UIImage+Extensions.swift */; };
+		001C55BF28089BC600A71566 /* CVPixelBuffer+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55AD28089BC600A71566 /* CVPixelBuffer+Create.swift */; };
+		001C55C028089BC600A71566 /* MLModel+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55B528089BC600A71566 /* MLModel+Images.swift */; };
+		001C55C128089BC600A71566 /* UIImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55B228089BC600A71566 /* UIImage+RawBytes.swift */; };
+		001C55C228089BC600A71566 /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55B028089BC600A71566 /* MLMultiArray+Image.swift */; };
+		001C55C328089BC600A71566 /* CVPixelBuffer+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55AF28089BC600A71566 /* CVPixelBuffer+Resize.swift */; };
+		001C55C428089BC600A71566 /* MLMultiArray+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55B728089BC600A71566 /* MLMultiArray+Helpers.swift */; };
+		001C55C528089BC600A71566 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55AE28089BC600A71566 /* UIImage+CVPixelBuffer.swift */; };
+		001C55C628089BC600A71566 /* CVPixelBuffer+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55AB28089BC600A71566 /* CVPixelBuffer+Rotate.swift */; };
+		001C55C728089BC600A71566 /* CGImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55A828089BC600A71566 /* CGImage+RawBytes.swift */; };
+		001C55C828089BC600A71566 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55B128089BC600A71566 /* CGImagePropertyOrientation.swift */; };
+		001C55CB2808B68E00A71566 /* hopethisworks.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 001C55CA2808B68E00A71566 /* hopethisworks.mlmodel */; };
 		003946E627C6BF7F000C8FFD /* GAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003946E527C6BF7F000C8FFD /* GAN.swift */; };
-		003946EC27E17F8A000C8FFD /* ugatit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 003946EB27E17F8A000C8FFD /* ugatit.mlmodel */; };
-		003946EE27E17F8D000C8FFD /* warpgan.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 003946ED27E17F8D000C8FFD /* warpgan.mlmodel */; };
-		009662EF27F50E8300DD8B2E /* fast-neural-style-transfer-cuphead.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 009662EC27F50E8300DD8B2E /* fast-neural-style-transfer-cuphead.mlmodel */; };
-		009662F027F50E8300DD8B2E /* fast-neural-style-transfer-mosaic.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 009662ED27F50E8300DD8B2E /* fast-neural-style-transfer-mosaic.mlmodel */; };
-		009662F327F50E9100DD8B2E /* fast-neural-style-transfer-starry-night.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 009662F227F50E9100DD8B2E /* fast-neural-style-transfer-starry-night.mlpackage */; };
 		00A34A1E274426B000D8DBE3 /* SketchYourOwnGANApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */; };
 		00A34A20274426B000D8DBE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A34A1F274426B000D8DBE3 /* ContentView.swift */; };
 		00A34A22274426B400D8DBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A34A21274426B400D8DBE3 /* Assets.xcassets */; };
 		00A34A25274426B400D8DBE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A34A24274426B400D8DBE3 /* Preview Assets.xcassets */; };
-		00F3187D280742A20076CA1B /* hopethisworks.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 00F3187C280742A20076CA1B /* hopethisworks.mlmodel */; };
 		00F3188528074C8A0076CA1B /* photosketch.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 00F3188428074C8A0076CA1B /* photosketch.mlmodel */; };
 		00F3188728074EFE0076CA1B /* photosketch2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 00F3188628074EFE0076CA1B /* photosketch2.mlmodel */; };
 		00F318892807553B0076CA1B /* photosketch3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 00F318882807553B0076CA1B /* photosketch3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		001C55A728089BC500A71566 /* CoreML+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreML+Combine.swift"; sourceTree = "<group>"; };
+		001C55A828089BC600A71566 /* CGImage+RawBytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+RawBytes.swift"; sourceTree = "<group>"; };
+		001C55A928089BC600A71566 /* NonMaxSuppression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
+		001C55AA28089BC600A71566 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		001C55AB28089BC600A71566 /* CVPixelBuffer+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Rotate.swift"; sourceTree = "<group>"; };
+		001C55AC28089BC600A71566 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		001C55AD28089BC600A71566 /* CVPixelBuffer+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Create.swift"; sourceTree = "<group>"; };
+		001C55AE28089BC600A71566 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		001C55AF28089BC600A71566 /* CVPixelBuffer+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Resize.swift"; sourceTree = "<group>"; };
+		001C55B028089BC600A71566 /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
+		001C55B128089BC600A71566 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		001C55B228089BC600A71566 /* UIImage+RawBytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RawBytes.swift"; sourceTree = "<group>"; };
+		001C55B328089BC600A71566 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		001C55B428089BC600A71566 /* CGImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		001C55B528089BC600A71566 /* MLModel+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MLModel+Images.swift"; sourceTree = "<group>"; };
+		001C55B628089BC600A71566 /* Predictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictions.swift; sourceTree = "<group>"; };
+		001C55B728089BC600A71566 /* MLMultiArray+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Helpers.swift"; sourceTree = "<group>"; };
+		001C55CA2808B68E00A71566 /* hopethisworks.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = hopethisworks.mlmodel; sourceTree = "<group>"; };
 		003946E527C6BF7F000C8FFD /* GAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAN.swift; sourceTree = "<group>"; };
-		003946EB27E17F8A000C8FFD /* ugatit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ugatit.mlmodel; sourceTree = "<group>"; };
-		003946ED27E17F8D000C8FFD /* warpgan.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = warpgan.mlmodel; sourceTree = "<group>"; };
-		009662EC27F50E8300DD8B2E /* fast-neural-style-transfer-cuphead.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "fast-neural-style-transfer-cuphead.mlmodel"; sourceTree = "<group>"; };
-		009662ED27F50E8300DD8B2E /* fast-neural-style-transfer-mosaic.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "fast-neural-style-transfer-mosaic.mlmodel"; sourceTree = "<group>"; };
-		009662F227F50E9100DD8B2E /* fast-neural-style-transfer-starry-night.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = "fast-neural-style-transfer-starry-night.mlpackage"; sourceTree = "<group>"; };
 		00A34A1A274426B000D8DBE3 /* SketchYourOwnGAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchYourOwnGAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchYourOwnGANApp.swift; sourceTree = "<group>"; };
 		00A34A1F274426B000D8DBE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		00A34A21274426B400D8DBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00A34A24274426B400D8DBE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		00F3187C280742A20076CA1B /* hopethisworks.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = hopethisworks.mlmodel; sourceTree = "<group>"; };
 		00F3188428074C8A0076CA1B /* photosketch.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = photosketch.mlmodel; sourceTree = "<group>"; };
 		00F3188628074EFE0076CA1B /* photosketch2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = photosketch2.mlmodel; sourceTree = "<group>"; };
 		00F318882807553B0076CA1B /* photosketch3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = photosketch3.mlmodel; sourceTree = "<group>"; };
@@ -52,6 +76,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001C55C92808AE7C00A71566 /* CoreMLHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				001C55B328089BC600A71566 /* Array+Extensions.swift */,
+				001C55B428089BC600A71566 /* CGImage+CVPixelBuffer.swift */,
+				001C55A828089BC600A71566 /* CGImage+RawBytes.swift */,
+				001C55B128089BC600A71566 /* CGImagePropertyOrientation.swift */,
+				001C55A728089BC500A71566 /* CoreML+Combine.swift */,
+				001C55AD28089BC600A71566 /* CVPixelBuffer+Create.swift */,
+				001C55AF28089BC600A71566 /* CVPixelBuffer+Resize.swift */,
+				001C55AB28089BC600A71566 /* CVPixelBuffer+Rotate.swift */,
+				001C55AC28089BC600A71566 /* Math.swift */,
+				001C55B528089BC600A71566 /* MLModel+Images.swift */,
+				001C55B728089BC600A71566 /* MLMultiArray+Helpers.swift */,
+				001C55B028089BC600A71566 /* MLMultiArray+Image.swift */,
+				001C55A928089BC600A71566 /* NonMaxSuppression.swift */,
+				001C55B628089BC600A71566 /* Predictions.swift */,
+				001C55AE28089BC600A71566 /* UIImage+CVPixelBuffer.swift */,
+				001C55AA28089BC600A71566 /* UIImage+Extensions.swift */,
+				001C55B228089BC600A71566 /* UIImage+RawBytes.swift */,
+			);
+			path = CoreMLHelpers;
+			sourceTree = "<group>";
+		};
 		00A34A11274426B000D8DBE3 = {
 			isa = PBXGroup;
 			children = (
@@ -71,15 +119,11 @@
 		00A34A1C274426B000D8DBE3 /* SketchYourOwnGAN */ = {
 			isa = PBXGroup;
 			children = (
+				001C55C92808AE7C00A71566 /* CoreMLHelpers */,
 				00F318882807553B0076CA1B /* photosketch3.mlmodel */,
 				00F3188628074EFE0076CA1B /* photosketch2.mlmodel */,
+				001C55CA2808B68E00A71566 /* hopethisworks.mlmodel */,
 				00F3188428074C8A0076CA1B /* photosketch.mlmodel */,
-				009662EC27F50E8300DD8B2E /* fast-neural-style-transfer-cuphead.mlmodel */,
-				009662ED27F50E8300DD8B2E /* fast-neural-style-transfer-mosaic.mlmodel */,
-				009662F227F50E9100DD8B2E /* fast-neural-style-transfer-starry-night.mlpackage */,
-				003946EB27E17F8A000C8FFD /* ugatit.mlmodel */,
-				003946ED27E17F8D000C8FFD /* warpgan.mlmodel */,
-				00F3187C280742A20076CA1B /* hopethisworks.mlmodel */,
 				003946E527C6BF7F000C8FFD /* GAN.swift */,
 				00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */,
 				00A34A1F274426B000D8DBE3 /* ContentView.swift */,
@@ -167,18 +211,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F3187D280742A20076CA1B /* hopethisworks.mlmodel in Sources */,
-				003946EC27E17F8A000C8FFD /* ugatit.mlmodel in Sources */,
-				009662F027F50E8300DD8B2E /* fast-neural-style-transfer-mosaic.mlmodel in Sources */,
+				001C55BB28089BC600A71566 /* Predictions.swift in Sources */,
 				003946E627C6BF7F000C8FFD /* GAN.swift in Sources */,
 				00F3188728074EFE0076CA1B /* photosketch2.mlmodel in Sources */,
-				009662F327F50E9100DD8B2E /* fast-neural-style-transfer-starry-night.mlpackage in Sources */,
+				001C55BC28089BC600A71566 /* Array+Extensions.swift in Sources */,
+				001C55BA28089BC600A71566 /* Math.swift in Sources */,
 				00A34A20274426B000D8DBE3 /* ContentView.swift in Sources */,
+				001C55B928089BC600A71566 /* CGImage+CVPixelBuffer.swift in Sources */,
+				001C55C528089BC600A71566 /* UIImage+CVPixelBuffer.swift in Sources */,
+				001C55C828089BC600A71566 /* CGImagePropertyOrientation.swift in Sources */,
 				00F318892807553B0076CA1B /* photosketch3.mlmodel in Sources */,
-				009662EF27F50E8300DD8B2E /* fast-neural-style-transfer-cuphead.mlmodel in Sources */,
+				001C55C228089BC600A71566 /* MLMultiArray+Image.swift in Sources */,
+				001C55B828089BC600A71566 /* CoreML+Combine.swift in Sources */,
 				00F3188528074C8A0076CA1B /* photosketch.mlmodel in Sources */,
-				003946EE27E17F8D000C8FFD /* warpgan.mlmodel in Sources */,
+				001C55C728089BC600A71566 /* CGImage+RawBytes.swift in Sources */,
+				001C55C428089BC600A71566 /* MLMultiArray+Helpers.swift in Sources */,
+				001C55CB2808B68E00A71566 /* hopethisworks.mlmodel in Sources */,
+				001C55C328089BC600A71566 /* CVPixelBuffer+Resize.swift in Sources */,
+				001C55C028089BC600A71566 /* MLModel+Images.swift in Sources */,
+				001C55BE28089BC600A71566 /* UIImage+Extensions.swift in Sources */,
+				001C55BD28089BC600A71566 /* NonMaxSuppression.swift in Sources */,
+				001C55C628089BC600A71566 /* CVPixelBuffer+Rotate.swift in Sources */,
 				00A34A1E274426B000D8DBE3 /* SketchYourOwnGANApp.swift in Sources */,
+				001C55C128089BC600A71566 /* UIImage+RawBytes.swift in Sources */,
+				001C55BF28089BC600A71566 /* CVPixelBuffer+Create.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
