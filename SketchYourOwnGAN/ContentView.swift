@@ -54,7 +54,6 @@ struct ContentView: View {
             VStack {
                 Image(uiImage:outputImage).resizable().aspectRatio(contentMode: .fit)
 <<<<<<< HEAD
-<<<<<<< HEAD
                 Image(uiImage: sketch).resizable().aspectRatio(contentMode: .fit)
                 HStack {
                     Button("Run GAN", action:{
@@ -65,11 +64,6 @@ struct ContentView: View {
                 Image("Gracie").resizable().aspectRatio(contentMode: .fit)
                 HStack {
                     Button("Run GAN", action:{
-=======
-                Image("Gracie").resizable().aspectRatio(contentMode: .fit)
-                HStack {
-                    Button("Run GAN", action:{
->>>>>>> parent of 01fa613... Testing PhotoSketch
                         let sketch2 = UIImage(imageLiteralResourceName: "Gracie")
                         let ciimage = CIImage(cgImage: sketch2.cgImage!)
                         gan.RunGan(sketch: ciimage)
