@@ -14,6 +14,7 @@ class GAN{
     var outputImage: UIImage?
     func coreMLCompletionHandler(request:VNRequest?,error:Error?){
 <<<<<<< HEAD
+<<<<<<< HEAD
         let result = request!.results!.first as! VNCoreMLFeatureValueObservation//VNPixelBufferObservation
         let multiArray = result.featureValue.multiArrayValue
         print(multiArray)
@@ -24,6 +25,8 @@ class GAN{
         //let cgImage = self.context.createCGImage(ciimage, from: ciimage.extent)
         //self.outputImage = UIImage(cgImage: cgImage!)
 =======
+=======
+>>>>>>> parent of 01fa613... Testing PhotoSketch
         let result = request!.results!.first as! VNPixelBufferObservation
         let ciimage = CIImage(cvPixelBuffer: result.pixelBuffer)
         let cgImage = self.context.createCGImage(ciimage, from: ciimage.extent)
@@ -33,6 +36,7 @@ class GAN{
     func RunGan(sketch: CGImage) {
         lazy var coreMLRequest:VNCoreMLRequest = {
             let config = MLModelConfiguration()
+<<<<<<< HEAD
 <<<<<<< HEAD
            let model = try! VNCoreMLModel(for: photosketch2(configuration: config).model)
            let request = VNCoreMLRequest(model: model, completionHandler: self.coreMLCompletionHandler)
@@ -46,6 +50,12 @@ class GAN{
            let request = VNCoreMLRequest(model: model, completionHandler: self.coreMLCompletionHandler)
             return request
            }()
+=======
+           let model = try! VNCoreMLModel(for: ugatit(configuration: config).model)
+           let request = VNCoreMLRequest(model: model, completionHandler: self.coreMLCompletionHandler)
+            return request
+           }()
+>>>>>>> parent of 01fa613... Testing PhotoSketch
 
         let handler = VNImageRequestHandler(ciImage: sketch,options: [:])
 >>>>>>> parent of 01fa613... Testing PhotoSketch
