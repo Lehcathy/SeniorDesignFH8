@@ -26,6 +26,8 @@
 		001C55C828089BC600A71566 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C55B128089BC600A71566 /* CGImagePropertyOrientation.swift */; };
 		001C55CB2808B68E00A71566 /* hopethisworks.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 001C55CA2808B68E00A71566 /* hopethisworks.mlmodel */; };
 		003946E627C6BF7F000C8FFD /* GAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003946E527C6BF7F000C8FFD /* GAN.swift */; };
+		005F5503280FBA3E00F2C2E4 /* fast-neural-style-transfer-mosaic.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 005F5502280FBA3D00F2C2E4 /* fast-neural-style-transfer-mosaic.mlmodel */; };
+		005F5505280FBA4900F2C2E4 /* ugatit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 005F5504280FBA4900F2C2E4 /* ugatit.mlmodel */; };
 		00A34A1E274426B000D8DBE3 /* SketchYourOwnGANApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */; };
 		00A34A20274426B000D8DBE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A34A1F274426B000D8DBE3 /* ContentView.swift */; };
 		00A34A22274426B400D8DBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A34A21274426B400D8DBE3 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		001C55B728089BC600A71566 /* MLMultiArray+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Helpers.swift"; sourceTree = "<group>"; };
 		001C55CA2808B68E00A71566 /* hopethisworks.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = hopethisworks.mlmodel; sourceTree = "<group>"; };
 		003946E527C6BF7F000C8FFD /* GAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAN.swift; sourceTree = "<group>"; };
+		005F5502280FBA3D00F2C2E4 /* fast-neural-style-transfer-mosaic.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "fast-neural-style-transfer-mosaic.mlmodel"; sourceTree = "<group>"; };
+		005F5504280FBA4900F2C2E4 /* ugatit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ugatit.mlmodel; sourceTree = "<group>"; };
 		00A34A1A274426B000D8DBE3 /* SketchYourOwnGAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchYourOwnGAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchYourOwnGANApp.swift; sourceTree = "<group>"; };
 		00A34A1F274426B000D8DBE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				00F3188628074EFE0076CA1B /* photosketch2.mlmodel */,
 				001C55CA2808B68E00A71566 /* hopethisworks.mlmodel */,
 				00F3188428074C8A0076CA1B /* photosketch.mlmodel */,
+				005F5502280FBA3D00F2C2E4 /* fast-neural-style-transfer-mosaic.mlmodel */,
+				005F5504280FBA4900F2C2E4 /* ugatit.mlmodel */,
 				003946E527C6BF7F000C8FFD /* GAN.swift */,
 				00A34A1D274426B000D8DBE3 /* SketchYourOwnGANApp.swift */,
 				00A34A1F274426B000D8DBE3 /* ContentView.swift */,
@@ -218,6 +224,7 @@
 				001C55BA28089BC600A71566 /* Math.swift in Sources */,
 				00A34A20274426B000D8DBE3 /* ContentView.swift in Sources */,
 				001C55B928089BC600A71566 /* CGImage+CVPixelBuffer.swift in Sources */,
+				005F5503280FBA3E00F2C2E4 /* fast-neural-style-transfer-mosaic.mlmodel in Sources */,
 				001C55C528089BC600A71566 /* UIImage+CVPixelBuffer.swift in Sources */,
 				001C55C828089BC600A71566 /* CGImagePropertyOrientation.swift in Sources */,
 				00F318892807553B0076CA1B /* photosketch3.mlmodel in Sources */,
@@ -230,6 +237,7 @@
 				001C55C328089BC600A71566 /* CVPixelBuffer+Resize.swift in Sources */,
 				001C55C028089BC600A71566 /* MLModel+Images.swift in Sources */,
 				001C55BE28089BC600A71566 /* UIImage+Extensions.swift in Sources */,
+				005F5505280FBA4900F2C2E4 /* ugatit.mlmodel in Sources */,
 				001C55BD28089BC600A71566 /* NonMaxSuppression.swift in Sources */,
 				001C55C628089BC600A71566 /* CVPixelBuffer+Rotate.swift in Sources */,
 				00A34A1E274426B000D8DBE3 /* SketchYourOwnGANApp.swift in Sources */,
