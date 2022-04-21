@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "359F877D-A793-4DEE-B2AB-145D54641FFF": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "BA6DFDFD-48ED-4B41-BD2F-575E3AC513F5": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "E52C2D1B-3A3C-44B8-B001-090BEDF3CA8B": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "fast-neural-style-transfer-starry-night.mlmodel",
+            "path": "com.apple.CoreML/fast-neural-style-transfer-starry-night.mlmodel"
+        }
+    },
+    "rootModelIdentifier": "E52C2D1B-3A3C-44B8-B001-090BEDF3CA8B"
+}

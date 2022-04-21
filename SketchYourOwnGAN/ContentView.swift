@@ -9,6 +9,8 @@ import SwiftUI
 import PencilKit
 import Vision
 struct ContentView: View {
+    @State private var model = "mosaic"
+    let models = ["mosaic", "starry night", "cuphead", "warp"]
     @State var isShowPhotoLibrary = false
     @State var gan = GAN()
     @State var inputImage = UIImage()
@@ -21,9 +23,15 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     Button("Run GAN", action:{
-                        gan.RunGan(sketch: inputImage.cgImage!)
+                        gan.RunGan(sketch: inputImage.cgImage!, modelName: model)
                         outputImage =  gan.outputImage!
                     }).buttonStyle(.bordered).background().colorMultiply(.blue).foregroundColor(.black)
+                    Spacer()
+                    Picker("Select Model:", selection: $model){
+                        ForEach(models, id:\.self){
+                            Text($0).padding()
+                        }
+                    }.pickerStyle(.menu)
                     Spacer()
                     Button(action: {
                         UIImageWriteToSavedPhotosAlbum(outputImage, nil, nil, nil)
